@@ -30,3 +30,14 @@ export PATH="./bin:./node_modules/.bin:${PATH}:/usr/local/sbin"
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -a"
+alias pip=/usr/local/bin/pip3
+
+# NVM (Node Version Manager)
+export NVM_DIR="$HOME/.nvm"
+[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
+
+# Custom commands - Josh
+source ~/code/josh-unwin/my_mac_config/.josh_custom_commands.sh
+

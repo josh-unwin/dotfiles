@@ -46,6 +46,17 @@
 
 [branch "master"]
   mergeoptions = --no-edit
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+
 [user]
-	email = joshunwin@protonmail.com
+	email = joshunwin@gmail.com
 	name = Josh Unwin
+
+[includeIf "gitdir:~/code/joshunwin/"]
+  path = ~/code/.gitconfig-joshunwin
+[includeIf "gitdir:~/code/josh-unwin/"]
+  path = ~/code/.gitconfig-josh-unwin
